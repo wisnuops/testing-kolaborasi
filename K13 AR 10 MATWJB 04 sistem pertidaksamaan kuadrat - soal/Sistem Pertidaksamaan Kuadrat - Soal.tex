@@ -91,32 +91,35 @@
 		
 		\newpage
 		
-		\item Daerah yang diarsir pada gambar berikut ini merupakah himpunan penyelesaian dari sistem pertidaksamaan ....	\\
+		\item Daerah yang diarsir pada gambar berikut ini merupakan himpunan penyelesaian dari sistem pertidaksamaan ....	\\
 		
 			\begin{tikzpicture}[scale=0.4]
 				\draw[->] (-6, 0) -- (12, 0) node[above] {$x$};
-				\draw[->] (0, -3) -- (0, 8) node[left] {$y$};
-				\draw[domain=-4:10, smooth, variable=\x] plot ({\x},{(2/9)*(\x)*(\x-6)});
+				\draw[->] (0, -5) -- (0, 8) node[left] {$y$};
+				\draw[domain=-2:8, smooth, variable=\x] plot ({\x},{(1/2)*(\x)*(\x-6)});
 				\draw[domain=-3:10, smooth, variable=\x] plot ({\x},{(-1/2)*\x + 4});
 				\draw (0, -0.5) node[left] {$0$};
 				\draw (3, 0) node[above] {$3$};
 				\draw (6.2, 0) node[below] {$6$};
 				\draw (8, 0) node[below] {$8$};
-				\draw (0, -2) node[left] {$-2$};
+				\draw (0, -4.5) node[left] {$-4{,}5$};
 				\draw (0, 3.8) node[left] {$4$};
-				\draw[dashed] (3, 0) -- (3, -2);
-				\draw[dashed] (0, -2) -- (3, -2);
-				\path[fill=orange, fill opacity=0.5] (6.51, {-6.51/2 + 4}) to [out=60, in=-110] (10, {2/9 * 10 * (10-6)}) -- (-4, {2/9 * (-4) * (-4-6)}) -- (-2.76, {-(-2.76/2) + 4}) -- (6.51, {-6.51/2 + 4});
+				\draw[dashed] (3, 0) -- (3, -4.5);
+				\draw[dashed] (0, -4.5) -- (3, -4.5);
+				\path[fill=orange, fill opacity=0.5] (6.27, {-6.27/2 + 4}) to [out=75, in=-100] (8, {1/2 * 8 * (8-6)}) -- (-2, {1/2 * (-2) * (-2-6)}) -- (-1.27, {-(-1.27/2) + 4}) -- (6.27, {-6.27/2 + 4});
 			\end{tikzpicture}
+			
+			Note: Nggak tau kenapa di file ini arsirannya nggak transparan. Untuk versi yang transparan, buka file \verb|transparency.pdf|
+			
 		\begin{enumerate}[(A)]
-			\item $y \geq 4{,}5x^2 + 27x$ dan $x + 2y \leq 8$
-			\item $y \leq 4{,}5x^2 + 27x$ dan $x + 2y \leq 8$
-			\item $y \leq 4{,}5x^2 + 27x$ dan $x + 2y \geq 8$
-			\item $y \geq 4{,}5x^2 + 27x$ dan $x + 2y \geq 8$
-			\item $y \leq 4{,}5x^2 + 27x$ dan $x + 2y \leq 8$
+			\item $y \geq \frac{1}{2}x^2 - 3x$ dan $x + 2y \leq 8$
+			\item $y \leq \frac{1}{2}x^2 - 3x$ dan $x + 2y \leq 8$
+			\item $y \leq \frac{1}{2}x^2 - 3x$ dan $x + 2y \geq 8$
+			\item $y \geq \frac{1}{2}x^2 - 3x$ dan $x + 2y \geq 8$
+			\item $y \leq \frac{1}{2}x^2 - 3x$ dan $x + 2y \leq 8$
 		\end{enumerate} 
 		
-		Note: Kalau arsirannya nggak transparan, buka file \verb|transparency.pdf|
+		
 		
 		\newpage
 		
@@ -165,32 +168,35 @@
 				\draw (0, 0) circle (5);
 				\path[fill=orange, fill opacity=0.5] (3, 7) -- (3,4) to [out=-40, in=90] (5, 0) to [out=-90, in=40] (3, -4) -- (3, -7) -- (7, -7) -- (7, 7) -- (3, 7);
 			\end{tikzpicture}	\\
+			
+			Note: Nggak tau kenapa di file ini arsirannya nggak transparan. Untuk versi yang transparan, buka file \verb|transparency.pdf|
+			
 		\begin{enumerate}[(A)]
 			\item \[\left\{\begin{array}{l}
 					x > 3	\\
-					x^2 + y^2 \leq 5	
+					x^2 + y^2 \leq 25	
 				\end{array}\right.\]
 			\item \[\left\{\begin{array}{l}
 					x < 3	\\
-					x^2 + y^2 \geq 5	
+					x^2 + y^2 \geq 25	
 				\end{array}\right.\]
 			\item \[\left\{\begin{array}{l}
 					x > 3	\\
-					x^2 + y^2 \geq 5	
+					x^2 + y^2 \geq 25	
 				\end{array}\right.\]
 			\item \[\left\{\begin{array}{l}
 					x \geq 3	\\
-					x^2 + y^2 \geq 5	
+					x^2 + y^2 \geq 25	
 				\end{array}\right.\]
 			\item \[\left\{\begin{array}{l}
 					x \geq 3	\\
-					x^2 + y^2 \leq 5	
+					x^2 + y^2 \leq 25	
 				\end{array}\right.\]
 				
 		\newpage
 		
 		\end{enumerate}
-		\item Salah satu penyelesaian dari sistem pertidaksamaan:	\\
+		\item Yang bukan merupakan penyelesaian dari sistem pertidaksamaan:	\\
 			\[\left\{\begin{array}{l}
 					y < x^2 + 3x + 2	\\
 					y \leq 9 - x^2	
@@ -200,13 +206,15 @@
 		\begin{enumerate}[(A)]
 			\item $(-3, 0)$
 			\item $(-2, 0)$
-			\item $(-1, 0)$
+			\item $(-1, -1)$
 			\item $(1, 1)$
-			\item $(-2, 1)$
+			\item $(-2, -1)$
 		\end{enumerate}
 	\end{enumerate}
 	
 \section{Latihan Soal - Essay}
+
+	Note: Untuk bagian yang ini, nggak semuanya harus dibahas sih. Beberapa soal cuma mengulang konsep yang sama aja. Gue emang bikinnya rada berlebih.
 
 	\begin{enumerate}
 		\item Gambarlah himpunan penyelesaian dari sistem pertidaksamaan berikut ini!
